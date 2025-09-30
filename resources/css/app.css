@@ -2,8 +2,12 @@
 
 /* Navbar Styles */
 
+.nav-body {
+    height: 54px;
+}
+
 .navbar-logo {
-    width: 140.91px; /* Default para mobile */
+    width: 140.91px;
     height: 33px;
     transition: width 0.3s ease;
 }
@@ -11,7 +15,7 @@
 /* Desktop */
 @media (min-width: 736px) {
     .navbar-logo {
-        width: 253px; /* Desktop */
+        width: 253px;
         height: auto;
     }
 }
@@ -56,7 +60,7 @@
     font-size: 1.1rem;
 }
 
-/* Ajustes responsivos */
+/* Responsive adjustments */
 @media (max-width: 767.98px) {
     .o-gutter-x {
         padding-left: 15px;
@@ -68,7 +72,6 @@
     }
 }
 
-/* LEMBRETE: Cor do botão laranja - ajustar conforme necessidade */
 .btn-primary {
     background-color: #FF6B35 !important;
     border-color: #FF6B35 !important;
@@ -77,35 +80,25 @@
 .btn-primary:hover {
     background-color: #e55a2b !important;
     border-color: #e55a2b !important;
+<<<<<<< Updated upstream
+=======
 }
 
-/* Approach com Aspect Ratio */
+/* Hero section */
 .hero-section {
     position: relative;
     width: 100%;
+    height: auto;
 }
 
 .carousel-item {
     width: 100%;
+    height: auto;
 }
 
-/* Mobile aspect ratio - ajuste conforme suas imagens mobile */
 @media (max-width: 767.98px) {
     .hero-section {
-        aspect-ratio: 3/4; /* Common mobile banner ratio */
-    }
-    
-    .carousel-item img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover; /* ou contain */
-    }
-}
-
-/* Desktop aspect ratio */
-@media (min-width: 768px) {
-    .hero-section {
-        aspect-ratio: 16/9; /* Common desktop banner ratio */
+        height: auto;
     }
     
     .carousel-item img {
@@ -113,4 +106,17 @@
         height: 100%;
         object-fit: cover;
     }
+}
+
+@media (min-width: 768px) {    
+    .nav-body {
+        height: 90px;
+    }
+    
+    .carousel-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+>>>>>>> Stashed changes
 }

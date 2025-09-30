@@ -1,1 +1,80 @@
 @import 'bootstrap';
+
+/* Navbar Styles */
+
+.navbar-logo {
+    width: 140.91px; /* Default para mobile */
+    height: 33px;
+    transition: width 0.3s ease;
+}
+
+/* Desktop */
+@media (min-width: 736px) {
+    .navbar-logo {
+        width: 253px; /* Desktop */
+        height: auto;
+    }
+}
+
+.navbar-brand img {
+    transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover img {
+    transform: scale(1.05);
+}
+
+.nav-link {
+    color: #333 !important;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+.nav-link:hover {
+    color: #FF6B35 !important; /* LEMBRETE: Cor laranja a ajustar */
+}
+
+.cart-icon {
+    position: relative;
+    text-decoration: none;
+}
+
+.badge {
+    font-size: 0.7rem;
+}
+
+/* Offcanvas Mobile Menu */
+.offcanvas {
+    background-color: #f8f9fa;
+}
+
+.offcanvas-body .nav-link {
+    border-bottom: 1px solid #dee2e6;
+    font-size: 1.1rem;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 767.98px) {
+    .o-gutter-x {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    #logo {
+        justify-content: center;
+    }
+}
+
+/* LEMBRETE: Cor do botão laranja - ajustar conforme necessidade */
+.btn-primary {
+    background-color: #FF6B35 !important;
+    border-color: #FF6B35 !important;
+}
+
+.btn-primary:hover {
+    background-color: #e55a2b !important;
+    border-color: #e55a2b !important;
+}

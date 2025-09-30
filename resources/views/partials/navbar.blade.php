@@ -1,5 +1,5 @@
 <header class="container">
-    <div class="row align-items-center" style="height:54px">
+    <div class="row align-items-center" style="height:90px">
         <!-- Hamburguer Menu (Mobile) -->
         <div class="col-3 d-block d-md-none">
             <button class="navbar-toggler p-0 border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-controls="mobileMenu" aria-label="Abrir menu">

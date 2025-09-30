@@ -80,8 +80,6 @@
 .btn-primary:hover {
     background-color: #e55a2b !important;
     border-color: #e55a2b !important;
-<<<<<<< Updated upstream
-=======
 }
 
 /* Hero section */
@@ -118,5 +116,4 @@
         height: 100%;
         object-fit: cover;
     }
->>>>>>> Stashed changes
 }

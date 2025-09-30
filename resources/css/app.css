@@ -78,3 +78,39 @@
     background-color: #e55a2b !important;
     border-color: #e55a2b !important;
 }
+
+/* Approach com Aspect Ratio */
+.hero-section {
+    position: relative;
+    width: 100%;
+}
+
+.carousel-item {
+    width: 100%;
+}
+
+/* Mobile aspect ratio - ajuste conforme suas imagens mobile */
+@media (max-width: 767.98px) {
+    .hero-section {
+        aspect-ratio: 3/4; /* Common mobile banner ratio */
+    }
+    
+    .carousel-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* ou contain */
+    }
+}
+
+/* Desktop aspect ratio */
+@media (min-width: 768px) {
+    .hero-section {
+        aspect-ratio: 16/9; /* Common desktop banner ratio */
+    }
+    
+    .carousel-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}

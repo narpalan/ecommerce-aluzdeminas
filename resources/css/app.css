@@ -1,11 +1,47 @@
 @import 'bootstrap';
 
-/* Navbar Styles */
-
-.nav-body {
-    height: 54px;
+body {
+    font-family: 'Caviar Dreams', sans-serif;
+    font-weight: normal;
 }
 
+/* Regular */
+@font-face {
+    font-family: 'Caviar Dreams';
+    src: url('../fonts/caviar-dreams/CaviarDreams.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Italic */
+@font-face {
+    font-family: 'Caviar Dreams';
+    src: url('../fonts/caviar-dreams/CaviarDreams_Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* Bold */
+@font-face {
+    font-family: 'Caviar Dreams';
+    src: url('../fonts/caviar-dreams/Caviar Dreams Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Bold Italic */
+@font-face {
+    font-family: 'Caviar Dreams';
+    src: url('../fonts/caviar-dreams/CaviarDreams_BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* Navbar Styles */
 .navbar-logo {
     width: 140.91px;
     height: 33px;
@@ -97,6 +133,19 @@
     height: auto;
 }
 
+.hero-section .carousel-caption {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    bottom: auto;
+    right: auto;
+    text-align: left;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
 @media (max-width: 767.98px) {
     .hero-section {
         height: auto;
@@ -120,5 +169,86 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
+    }
+}
+
+.carousel-caption-responsive {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    pointer-events: none;    
+}
+
+.caption-content {
+    width: 100%;
+    padding-left: 5%;
+    text-align: left;
+    pointer-events: auto;
+}
+
+.caption-text {
+    width: 80%;
+    max-width: 282px;
+}
+
+.caption-title {
+    font-size: 1.5rem;           
+    line-height: normal;
+    display: block;
+}
+
+.caption-subtitle {
+    font-size: 1.5rem;           
+    line-height: normal;
+    display: block;
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1023.98px) {
+    .caption-content {
+        padding-left: 7%;
+    }
+    
+    .caption-text {
+        width: 70%;
+        max-width: 500px;
+    }
+    
+    .caption-title,
+    .caption-subtitle {
+        font-size: 28px;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+    .caption-content {
+        padding-left: 10%;
+    }
+    
+    .caption-text {
+        width: 60%;
+        max-width: 800px;
+    }
+    
+    .caption-title,
+    .caption-subtitle {        
+        font-size: 4rem;
+    }
+}
+
+/* Ajustes para telas muito pequenas */
+@media (max-width: 320px) {
+    .caption-text {
+        width: 85%;
+    }
+    
+    .caption-title,
+    .caption-subtitle {
+        font-size: 20px;
     }
 }

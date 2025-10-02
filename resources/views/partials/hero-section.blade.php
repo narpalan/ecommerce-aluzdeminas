@@ -1,35 +1,61 @@
-<section class="hero-section w-100">
+<section class="hero-section w-100">    
+    @php
+        $slides = [
+            [
+                'title' => 'Luz de Minas,',
+                'subtitle' => 'Iluminando momentos Inspirando pessoas!'
+            ],
+            [
+                'title' => 'Candles are awesome',
+                'subtitle' => 'SOME SECOND LINE TEXT'
+            ],
+            [
+                'title' => 'Make your home feel cozy!',
+                'subtitle' => 'Buy a candle TODAY!'
+            ],
+        ];
+    @endphp
     <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
-        <!-- Indicadores (bolinhas) -->
+        <!-- Indicators -->
         <div class="carousel-indicators">
-            @foreach([1, 2, 3] as $index)
+            @foreach($slides as $index => $slide)
             <button type="button" 
                     data-bs-target="#heroCarousel" 
-                    data-bs-slide-to="{{ $index - 1 }}" 
-                    class="{{ $index === 1 ? 'active' : '' }}" 
+                    data-bs-slide-to="{{ $index }}" 
+                    class="{{ $index === 0 ? 'active' : '' }}" 
                     aria-label="Slide {{ $index }}"
-                    aria-current="{{ $index === 1 ? 'true' : 'false' }}">
+                    aria-current="{{ $index === 0 ? 'true' : 'false' }}">
             </button>
             @endforeach
         </div>
 
         <div class="carousel-inner">
-            @foreach([1, 2, 3] as $index)
-            <div class="carousel-item {{ $index === 1 ? 'active' : '' }}">
+            @foreach($slides as $index => $slide)
+            <div class="carousel-item {{ $index === 0 ? 'active' : '' }}">
                 <picture>
                     <!-- Mobile -->
-                    <source srcset="{{ asset('assets/imgs/carousel-hero-' . $index . '.svg') }}" media="(max-width: 767.98px)">
+                    <source srcset="{{ asset('assets/imgs/carousel-hero-' . ($index) . '.svg') }}" media="(max-width: 767.98px)">
                     
-                    <!-- Desktop e Tablet -->
-                    <source srcset="{{ asset('assets/imgs/carousel-banner-' . $index . '.svg') }}" media="(min-width: 768px)">
+                    <!-- Desktop n Tablet -->
+                    <source srcset="{{ asset('assets/imgs/carousel-banner-' . ($index) . '.svg') }}" media="(min-width: 768px)">
 
-                    <!-- Fallback com loading otimizado -->
-                    <img src="{{ asset('assets/imgs/carousel-banner-' . $index . '.svg') }}" 
+                    <!-- Fallback n optimized loading -->
+                    <img src="{{ asset('assets/imgs/carousel-banner-' . ($index) . '.svg') }}" 
                          class="w-100 d-block" 
                          alt="Hero Banner {{ $index }} - A Luz de Minas Velas e Luminárias"
-                         loading="{{ $index === 1 ? 'eager' : 'lazy' }}"
-                         decoding="{{ $index === 1 ? 'sync' : 'async' }}">
+                         loading="{{ $index === 0 ? 'eager' : 'lazy' }}"
+                         decoding="{{ $index === 0 ? 'sync' : 'async' }}">
                 </picture>
+                
+                <!-- Slide Caption -->
+                <div class="carousel-caption-responsive">
+                    <div class="caption-content">
+                        <p class="m-0 px-3 py-2 caption-text">
+                            <span class="text-white caption-title my-2">{{ $slide['title'] }}<br/></span>
+                            <span class="text-white caption-subtitle">{{ $slide['subtitle'] }}</span>
+                        </p>
+                    </div>
+                </div>
             </div>
             @endforeach
         </div>

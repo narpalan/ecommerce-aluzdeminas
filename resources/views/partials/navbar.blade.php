@@ -17,11 +17,11 @@
         <!-- Nav Links (Desktop) -->
         <div class="col-md-8 d-none d-md-flex justify-content-center">
             <nav class="navbar-nav d-flex flex-row gap-4" role="navigation" aria-label="Navegação principal">
-                <a class="nav-link" href="/">HOME</a>
-                <a class="nav-link" href="#sobre">SOBRE</a>
-                <a class="nav-link" href="#fragrancias">FRAGRÂNCIAS</a>
-                <a class="nav-link" href="#produtos">PRODUTOS</a>
-                <a class="nav-link" href="#kits-presentes">KITS E PRESENTES</a>
+                <a class="nav-link fw-bold" href="/">HOME</a>
+                <a class="nav-link fw-bold" href="#sobre">SOBRE</a>
+                <a class="nav-link fw-bold" href="#fragrancias">FRAGRÂNCIAS</a>
+                <a class="nav-link fw-bold" href="#produtos">PRODUTOS</a>
+                <a class="nav-link fw-bold" href="#kits-presentes">KITS E PRESENTES</a>
             </nav>
         </div>
         

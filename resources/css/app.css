@@ -147,6 +147,11 @@ body {
 }
 
 @media (max-width: 767.98px) {
+
+    .nav-body {
+        min-height: 54px;
+    }
+
     .hero-section {
         height: auto;
         height: auto;

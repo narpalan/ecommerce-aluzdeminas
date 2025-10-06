@@ -5,5 +5,6 @@
 
 @section('content')
     @include('partials.hero-section')
+    @include('partials.benefits-bar')
     
 @endsection

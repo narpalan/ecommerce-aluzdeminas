@@ -1,4 +1,4 @@
-<section class="benefits-bar py-4">
+<section class="benefits-bar py-5">
     <div class="container">
         <div class="row text-center">
             

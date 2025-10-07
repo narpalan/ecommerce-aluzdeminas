@@ -1,4 +1,4 @@
-<section class="hero-section w-100">    
+<section class="hero-section w-100 pb-5">    
     @php
         $slides = [
             [

@@ -64,7 +64,7 @@
                     @endforeach
                 </div>
                 
-                <!-- Controls -->
+                <!-- Controls 
                 <button class="carousel-control-prev" type="button" data-bs-target="#categoriesCarousel" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Anterior</span>
@@ -73,6 +73,7 @@
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Próximo</span>
                 </button>
+                -->
                 
                 <!-- Indicators -->
                 <div class="carousel-indicators-container mt-4">
@@ -106,8 +107,8 @@
     }
 
     .category-image {
-        width: 25rem;
-        height: 27rem;
+        width: 20rem;
+        height: 20rem;
         margin: 0 auto;    
         border-radius: 50% 50% 0% 0%;    
         transition: all 0.3s ease;

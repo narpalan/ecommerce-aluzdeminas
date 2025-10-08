@@ -82,7 +82,7 @@
                             data-bs-target="#categoriesCarousel" 
                             data-bs-slide-to="{{ $index }}" 
                             class="carousel-indicator {{ $index === 0 ? 'active' : '' }}"
-                            aria-label="Categoria {{ $index + 1 }}">
+                            aria-label="Categoria {{ $index + 1 }} {{ $category['name'] }}">
                     </button>
                     @endforeach
                 </div>

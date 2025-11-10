@@ -1,4 +1,4 @@
-# A Luz de Minas - E-commerce de Velas e Luminárias Artesanais
+# E-commerce Luz de Minas - Velas Artesanais e Luminárias"
 
 ![Logo Navbar](https://public/assets/imgs/logo-navbar.svg)
 

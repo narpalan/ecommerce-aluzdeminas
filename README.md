@@ -242,7 +242,7 @@ Para dúvidas ou suporte sobre o projeto:
 - Email: [seu-email@provedor.com]
 - Repositório: [Link do GitHub]
 
-Desenvolvido com 💜 e ☕ por [Seu Nome] e [Sua Esposa]
+Desenvolvido com 💜 e ☕ por Thiago Fumega e Thaina Gomes
 
 "Iluminando lares com produtos artesanais de qualidade"
 

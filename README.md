@@ -1,6 +1,6 @@
 # E-commerce Luz de Minas - Velas Artesanais e Luminárias"
 
-![Logo Navbar](https://public/assets/imgs/logo-navbar.svg)
+![Logo Navbar](./public/assets/imgs/logo-navbar.svg)
 
 E-commerce especializado em velas aromáticas, luminárias e produtos artesanais com inspiração mineira
 
@@ -119,12 +119,12 @@ cp .env.example .env
 php artisan key:generate
 
 # 5. Configure banco de dados no .env
-DB_CONNECTION=mysql
-DB_HOST=127.0.0.1
-DB_PORT=3306
-DB_DATABASE=a_luz_de_minas
-DB_USERNAME=seu_usuario
-DB_PASSWORD=sua_senha
+DB_CONNECTION=
+DB_HOST=
+DB_PORT=
+DB_DATABASE=
+DB_USERNAME=
+DB_PASSWORD=
 
 # 6. Execute migrations
 php artisan migrate
@@ -156,13 +156,13 @@ php artisan test
 ## 👥 Equipe
 
 ### 🎨 Design & UX
-- Sua Esposa - Designer UI/UX
+- Thaina Gomes Macedo - Designer UI/UX
 - Protótipos Figma
 - Design System
 - Experiência do usuário
 
 ### 💻 Desenvolvimento
-- Você - Full Stack Developer
+- Thiago Fumega M. Machado - Full Stack Developer
 - Arquitetura do sistema
 - Backend (Laravel/PHP)
 - Frontend (Vue.js/JavaScript)
@@ -238,7 +238,7 @@ php artisan tinker
 ## 📞 Suporte
 Para dúvidas ou suporte sobre o projeto:
 
-- Desenvolvedor: [Seu Nome]
+- Desenvolvedor: [Nome]
 - Email: [seu-email@provedor.com]
 - Repositório: [Link do GitHub]
 
@@ -249,7 +249,7 @@ Desenvolvido com 💜 e ☕ por [Seu Nome] e [Sua Esposa]
 ## 📄 Licença
 Este projeto é proprietário de A Luz de Minas. Todos os direitos reservados.
 
-Última atualização: {{DATA_ATUAL}}
+Última atualização: 10/11/2025
 Versão: 1.0.0-alpha
 
 
